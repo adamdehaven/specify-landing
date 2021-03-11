@@ -1,0 +1,95 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-family: $header-font;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 1rem 0 2rem;
+
+  // Scroll-to margins/padding
+  &[id] {
+    margin-top: -$navbar-height - 1.5rem;
+    padding-top: $navbar-height + 1.5rem;
+
+    @media ($tablet) {
+      margin-top: -$navbar-height - 3rem;
+      padding-top: $navbar-height + 3rem;
+    }
+  }
+
+  b,
+  strong {
+    font-weight: 700 !important;
+  }
+
+  a {
+    border: 0 !important;
+  }
+
+  &:hover > .header-anchor {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin: 0 0 2.5rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+
+  @media ($mobile-narrow) {
+    font-size: 3.6rem;
+  }
+
+  &.is-large {
+    font-size: 4rem;
+
+    @media ($tablet) {
+      font-size: 5rem;
+    }
+  }
+}
+
+h2 {
+  margin: 0 0 2.5rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+
+  @media ($mobile-narrow) {
+    font-size: 3.6rem;
+  }
+}
+
+h3 {
+  line-height: 1.4;
+  font-size: 2.4rem;
+
+  @media ($tablet) {
+    font-size: 2.8rem;
+  }
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.4;
+
+  @media ($tablet) {
+    font-size: 2.8rem;
+  }
+}
+
+h5 {
+  font-size: 2.2rem;
+
+  @media ($tablet) {
+    font-size: 2.4rem;
+  }
+}
+
+h6 {
+  font-size: 2rem;
+}

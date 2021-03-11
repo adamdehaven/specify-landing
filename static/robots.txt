@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://specify.dehaven.org/sitemap.xml

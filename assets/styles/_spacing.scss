@@ -1,0 +1,80 @@
+// Margin m* and padding p* helpers in all directions:
+// *t for top
+// *r for right
+// *b for bottom
+// *l for left
+// *x horizontally for both left and right
+// *y vertically for both top and bottom
+
+// You need to combine a margin/padding prefix with a direction suffix. For example:
+// for a margin-top, use mt-*
+// for a padding-bottom, use pb-*
+// for both margin-left and margin-right, use mx-*
+// Each of these property-direction combinations needs to be appended with one of 6 value suffixes:
+
+// Suffix	Value
+// *-0	0
+// *-1	0.25rem
+// *-2	0.5rem
+// *-3	0.75rem
+// *-4	1rem
+// *-5	1.5rem
+// *-6	3rem
+
+$spacing-shortcuts: (
+  'margin': 'm',
+  'padding': 'p',
+);
+$spacing-directions: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l',
+);
+$spacing-horizontal: 'x';
+$spacing-vertical: 'y';
+$spacing-values: (
+  '0': 0,
+  '1': 0.25rem,
+  '2': 0.5rem,
+  '3': 0.75rem,
+  '4': 1rem,
+  '5': 1.5rem,
+  '6': 3rem,
+);
+
+@each $property, $shortcut in $spacing-shortcuts {
+  @each $name, $value in $spacing-values {
+    // All directions
+    .#{$shortcut}-#{$name} {
+      #{$property}: $value !important;
+    }
+    // Cardinal directions
+    @each $direction, $suffix in $spacing-directions {
+      .#{$shortcut}#{$suffix}-#{$name} {
+        #{$property}-#{$direction}: $value !important;
+      }
+    }
+    // Horizontal axis
+    @if $spacing-horizontal != null {
+      .#{$shortcut}#{$spacing-horizontal}-#{$name} {
+        #{$property}-left: $value !important;
+        #{$property}-right: $value !important;
+      }
+    }
+    // Vertical axis
+    @if $spacing-vertical != null {
+      .#{$shortcut}#{$spacing-vertical}-#{$name} {
+        #{$property}-top: $value !important;
+        #{$property}-bottom: $value !important;
+      }
+    }
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-left: auto;
+}

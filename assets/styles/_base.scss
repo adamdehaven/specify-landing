@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: $black;
+  background: rgba($primary, 0.2); // change as needed
+  text-shadow: none;
+}
+
+html {
+  background-color: $white;
+  font-size: 10px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $black;
+  background: $gray-light;
+  @include blueprint-bg;
+  font-family: $body-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $body-font;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: $code-font;
+}
+
+p,
+dl,
+ol,
+ul,
+blockquote,
+pre,
+table {
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+
+a {
+  color: $link;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:not(.navbar-item):not(.button) {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  strong {
+    color: currentColor;
+  }
+
+  &:not(.button) {
+    font-weight: 400;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken($link, 10%);
+  }
+
+  &:active {
+    color: darken($link, 15%);
+  }
+
+  &.header-anchor {
+    font-size: 0.85em;
+    float: left;
+    margin-left: -2rem;
+    margin-top: 0.125em;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+    .icon-link {
+      background-image: url('~assets/images/icon-hashtag.svg');
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px;
+    }
+  }
+}
+
+p {
+  margin: 0 0 2rem;
+  word-wrap: break-word; // if a word is longer than an entire line, break it to the next line (often true with email addresses on phones) - otherwise won't affect anything
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  small {
+    font-size: 80%;
+  }
+}
+
+b,
+strong {
+  font-weight: 600;
+
+  p & {
+    font-weight: 600;
+  }
+}
+
+blockquote {
+  background-color: $border-color;
+  @include ltr-property('border', 5px solid $border-color, false);
+  padding: 1.25em 1.5em;
+}
+
+ol {
+  list-style-position: outside;
+  @include ltr-property('margin', 2em, false);
+  margin-top: 1em;
+
+  &:not([type]) {
+    list-style-type: decimal;
+
+    &.is-lower-alpha {
+      list-style-type: lower-alpha;
+    }
+
+    &.is-lower-roman {
+      list-style-type: lower-roman;
+    }
+
+    &.is-upper-alpha {
+      list-style-type: upper-alpha;
+    }
+
+    &.is-upper-roman {
+      list-style-type: upper-roman;
+    }
+  }
+}
+
+ul {
+  list-style: disc outside;
+  @include ltr-property('margin', 2em, false);
+  margin-top: 1em;
+
+  ul {
+    list-style-type: disc outside;
+
+    ul {
+      list-style-type: square;
+    }
+  }
+}
+
+dd {
+  @include ltr-property('margin', 2em, false);
+}
+
+figure {
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 2em;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  figcaption {
+    font-style: italic;
+  }
+}
+
+pre {
+  @include overflow-touch;
+  overflow-x: auto;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+sup,
+sub {
+  font-size: 75%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba($white, 0.2);
+  margin: 1em auto;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.image:not(.icon) {
+  display: block;
+
+  img:not(.icon) {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    &.is-rounded {
+      border-radius: $radius-rounded;
+    }
+  }
+
+  &.is-rounded img {
+    border-radius: $radius-rounded;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+address {
+  font: inherit;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+.delete {
+  @include delete;
+}
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: $icon-size;
+  width: $icon-size;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    height: $icon-size;
+    width: $icon-size;
+    margin: auto !important;
+  }
+}
+
+main {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  // Allow items to go edge-to-edge
+  .is-fullwidth-container {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.page {
+  padding-top: $navbar-height;
+}
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+
+  &.is-fluid {
+    max-width: none !important;
+    padding-left: $gap;
+    padding-right: $gap;
+    width: 100%;
+  }
+
+  @media screen and ($desktop) {
+    max-width: $desktop-width - $container-offset;
+  }
+}
+
+.section {
+  padding: 6rem 0;
+
+  &:not(.is-small) {
+    @media ($tablet) {
+      padding: 8rem 0;
+    }
+
+    @media ($desktop) {
+      padding: 10rem 0;
+    }
+  }
+
+  &.is-fullwidth-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:not(.is-small) {
+      @media ($tablet) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+      }
+
+      @media ($desktop) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+      }
+    }
+  }
+}

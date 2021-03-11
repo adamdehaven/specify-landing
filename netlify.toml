@@ -1,0 +1,20 @@
+# Settings in the [build] context are global and are applied to all contexts
+# unless otherwise overridden by more specific contexts.
+[build]
+    base = "/"
+    command = "yarn run generate"
+
+[context.deploy-preview]
+    command = "yarn run generate:noindex"
+
+[context.branch-deploy]
+    command = "yarn run generate:noindex"
+
+# Redirects
+
+# Domains
+[[redirects]]
+    from = "https://specify.netlify.app/*"
+    to = "https://specify.dehaven.org/:splat"
+    status = 301
+    force = true

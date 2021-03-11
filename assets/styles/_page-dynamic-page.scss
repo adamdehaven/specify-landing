@@ -1,0 +1,11 @@
+.page-dynamic-page {
+  &.page-changelog {
+    ul:not(:last-of-type) {
+      margin-bottom: 4rem;
+
+      @media ($tablet) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}

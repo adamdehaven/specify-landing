@@ -1,0 +1,87 @@
+.box {
+  position: relative;
+  background: $white;
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+  color: $black;
+  display: block;
+  padding: 2rem;
+
+  @media ($tablet) {
+    padding: 6rem;
+    border-radius: $radius-medium;
+    margin-bottom: 0;
+  }
+
+  &.is-small {
+    padding: 3rem;
+    box-shadow: none;
+    margin: 1.5rem 0 3rem;
+  }
+
+  &.is-large {
+    padding: 2rem 0.5rem;
+
+    @media ($mobile-narrow) {
+      padding: 2.5rem 2rem;
+    }
+
+    @media ($tablet) {
+      padding: 4rem 3.5rem;
+    }
+
+    @media ($tablet-wide) {
+      padding: 4rem 2rem;
+    }
+
+    @media ($desktop) {
+      padding: 6rem;
+    }
+  }
+
+  &.is-transparent {
+    color: $black;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  // .box inside another .box should have smaller radius than its parent
+  .box {
+    border-radius: $radius;
+  }
+
+  // radius size
+  &.has-radius {
+    &-small {
+      border-radius: $radius !important;
+    }
+
+    &-medium {
+      border-radius: $radius-medium !important;
+    }
+
+    &-large {
+      border-radius: $radius-large !important;
+    }
+  }
+
+  .box + & {
+    margin-top: 1.5rem;
+  }
+
+  p + &,
+  .content + & {
+    margin-top: 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    p + & {
+      margin-top: 0;
+    }
+  }
+}

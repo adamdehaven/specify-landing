@@ -1,0 +1,45 @@
+[
+  {
+    "slug": "personal-info",
+    "name": "Adam DeHaven",
+    "email": "adam@dehaven.org",
+    "website": "https://www.adamdehaven.com",
+    "avatar": "https://www.adamdehaven.com/images/adam-dehaven.jpg",
+    "company": "Humana",
+    "title": "Senior Software Engineer",
+    "about": "https://www.adamdehaven.com/about/",
+    "gender": "male",
+    "social": [
+      {
+        "title": "GitHub",
+        "icon": "brands/github",
+        "account": "adamdehaven",
+        "url": "https://github.com/adamdehaven"
+      },
+      {
+        "title": "Twitter",
+        "icon": "brands/twitter",
+        "account": "adamdehaven",
+        "url": "https://twitter.com/adamdehaven"
+      },
+      {
+        "title": "Instagram",
+        "icon": "brands/instagram",
+        "account": "adamdehaven",
+        "url": "https://instagram.com/adamdehaven"
+      },
+      {
+        "title": "LinkedIn",
+        "icon": "brands/linkedin",
+        "account": "adamdehaven",
+        "url": "https://linkedin.com/in/adamdehaven"
+      },
+      {
+        "title": "Strava",
+        "icon": "brands/strava",
+        "account": "adamdehaven",
+        "url": "https://www.strava.com/athletes/adamdehaven"
+      }
+    ]
+  }
+]

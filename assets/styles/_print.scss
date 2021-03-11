@@ -1,0 +1,23 @@
+// Add styles for printers.
+
+@media print {
+  * {
+    color: black !important;
+    max-width: 100%;
+  }
+
+  // Print URLs after links
+  a {
+    color: blue;
+
+    &:after {
+      content: ' (' attr(href) ') ';
+      font: normal normal 10pt/1 sans-serif;
+    }
+  } // a
+
+  // Don't print URLs after nav menu links
+  nav a:after {
+    content: none;
+  }
+} // end print media query

@@ -1,0 +1,114 @@
+// Colors
+$orange: #f77f00;
+$red: #d62828;
+$blue: #3c91e6;
+$gray: #7c7c7c;
+$gray-light: #d5d0cd;
+$border-color: darken($gray-light, 10%);
+$black: #003049;
+$white: #ffffff;
+
+// Color aliases
+$primary: $blue;
+$link: $blue;
+
+// Button colors
+// class name (is-teal), text color, background color
+$button-colors: (
+  'orange': (
+    $white,
+    $orange,
+  ),
+  'red': (
+    $white,
+    $red,
+  ),
+  'blue': (
+    $white,
+    $blue,
+  ),
+  'gray': (
+    $white,
+    $gray,
+  ),
+  'gray-light': (
+    $black,
+    $gray-light,
+  ),
+  'white': (
+    $black,
+    $white,
+  ),
+  'black': (
+    $white,
+    $black,
+  ),
+);
+
+// Text colors
+// class name (has-text-green)
+$text-colors: (
+  'blue': $blue,
+  'orange': $orange,
+  'red': $red,
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'white': $white,
+  'black': $black,
+);
+
+// Gaps
+$gap: 32px;
+$container-offset: (2 * $gap);
+
+// Breakpoints
+// All styles are mobile-first, then work their way up
+// Mobile Narrow
+$mobile-narrow-width: 419px;
+$under-mobile-narrow-width: 419px - 1px;
+$mobile-narrow: 'min-width: #{$mobile-narrow-width}';
+$under-mobile-narrow: 'max-width: #{$under-mobile-narrow-width}';
+// Tablet
+$tablet-width: 769px;
+$under-tablet-width: 769px - 1px;
+$tablet: 'min-width: #{$tablet-width}';
+$under-tablet: 'max-width: #{$under-tablet-width}';
+// Tablet-Wide
+$tablet-wide-width: 960px + $container-offset;
+$under-tablet-wide-width: 960px + $container-offset - 1px;
+$tablet-wide: 'min-width: #{$tablet-wide-width}';
+$under-tablet-wide: 'max-width: #{$under-tablet-wide-width}';
+// Desktop
+$desktop-width: 1302px + $container-offset;
+$under-desktop-width: 1302px + $container-offset - 1px;
+$desktop: 'min-width: #{$desktop-width}';
+$under-desktop: 'max-width: #{$under-desktop-width}';
+
+// Element properties
+$content-max-width: 1220px + $container-offset;
+$container-max-width: $desktop-width;
+$column-gap: 0.75rem;
+$tile-spacing: 0.75rem;
+$radius: 4px;
+$radius-small: $radius; // alias
+$radius-medium: 12px;
+$radius-large: 24px;
+$radius-rounded: 290486px; // Rounded border-radius
+$box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+$icon-size: 4.5rem;
+
+// Element overrides
+$navbar-height: 7rem;
+$navbar-item-hover-color: darken($black, 10%);
+$navbar-item-hover-background-color: darken($primary, 8%);
+$code-lang: js, ts, html, md, vue, css, sass, scss, less, stylus, go, java, c, sh, yaml, py, docker, dockerfile,
+  makefile;
+
+// Fonts
+$family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+// Styled fonts (add custom to beginning)
+$body-font: 'Poppins', $family-sans-serif;
+$header-font: 'Poppins', $family-sans-serif;
+$code-font: 'Fira Mono', $family-monospace;

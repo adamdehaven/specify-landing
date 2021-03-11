@@ -1,0 +1,185 @@
+::placeholder {
+  color: $gray;
+  font-family: $body-font;
+}
+
+form,
+.form {
+  .is-row {
+    align-items: baseline;
+  }
+}
+
+.input {
+  @include input-textarea-control;
+
+  &.is-small {
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 14px;
+  }
+}
+
+.textarea {
+  @include input-textarea-control;
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: calc(0.75em - 1px);
+  resize: vertical;
+
+  &:not([rows]) {
+    max-height: 40em;
+    min-height: 8em;
+  }
+
+  &[rows] {
+    height: initial;
+  }
+
+  &.has-fixed-size {
+    resize: none;
+  }
+}
+
+label:not(.checkbox):not(.radio),
+.label:not(.checkbox):not(.radio) {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  &:not(:last-child) {
+    margin-bottom: 0.25em;
+  }
+
+  @media ($tablet) {
+    font-size: 18px;
+  }
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
+
+  .required {
+    position: relative;
+    top: -4px;
+    left: -4px;
+    color: $red;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.form-item {
+  position: relative;
+  margin: 0 0 1rem;
+  border-top: none;
+
+  @media ($tablet) {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-fullwidth-tablet {
+    @media ($under-tablet-wide) {
+      flex: 100%;
+    }
+  }
+
+  &.is-fullwidth-tablet-wide {
+    @media ($under-desktop) {
+      flex: 100%;
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+
+  &.has-icon-left,
+  &.has-icon-right {
+    .icon {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 1rem;
+      z-index: 1;
+    }
+  }
+
+  &.has-icon-left {
+    .icon {
+      left: 2.75rem;
+    }
+
+    .input {
+      padding-left: 5rem;
+    }
+  }
+
+  &.has-icon-right {
+    .icon {
+      right: 2.75rem;
+    }
+
+    .input {
+      padding-right: 5rem;
+    }
+  }
+
+  &.has-input-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    // div.input (not actual input field)
+    > .input {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      cursor: default;
+      box-shadow: $box-shadow;
+
+      &:focus,
+      &:active {
+        border-color: $border-color;
+      }
+
+      > .is-row:first-of-type > [class^='is-col'] {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      // Actual <input class="input"/>
+      input.input {
+        background: transparent;
+        border-color: transparent;
+        margin: 0;
+        box-shadow: none;
+        font-size: 1.2rem;
+
+        @media ($mobile-narrow) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .static-text {
+      margin-right: 1rem;
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: 600;
+
+      @media ($mobile-narrow) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .button,
+    + .button {
+      border-radius: $radius - 4px;
+      margin: 0 0 0 auto;
+      font-size: 1.4rem;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}

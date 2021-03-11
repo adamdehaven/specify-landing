@@ -1,0 +1,301 @@
+.button {
+  @include base-control;
+  height: 4rem;
+  max-width: 100%;
+  background-color: $primary;
+  border-color: $primary;
+  border-width: 2px;
+  color: $white;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  text-decoration: none;
+  font-family: $body-font;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  strong {
+    color: inherit;
+  }
+
+  // States
+  // &:focus, // focus is left off as it's "sticky" when clicked. If you account for this in JS, just uncomment this line.
+  &:hover {
+    color: $white;
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+
+  &:active,
+  &.is-active {
+    color: $white;
+    background-color: darken($primary, 20%);
+    border-color: darken($primary, 20%);
+  }
+
+  &.is-outlined {
+    background-color: transparent;
+    border-color: $primary;
+    color: $primary;
+
+    svg {
+      fill: $primary;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+      color: $primary;
+    }
+
+    &.is-loading {
+      &::after {
+        border-color: transparent transparent $primary $primary !important;
+      }
+
+      &:hover,
+      &:focus {
+        &::after {
+          border-color: transparent transparent $primary $primary !important;
+        }
+      }
+    }
+  }
+
+  &.is-disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    color: $white;
+    background-color: $primary;
+    border-color: transparent;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+
+  &.is-small {
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 14px;
+  }
+
+  &.is-large {
+    font-size: 1.6rem;
+    padding: 3rem 2rem;
+
+    @media ($tablet) {
+      font-size: 1.8rem;
+      padding: 3rem;
+    }
+  }
+
+  &.is-fullwidth {
+    display: flex;
+    width: 100%;
+  }
+
+  &.is-fullwidth-mobile {
+    @media ($under-tablet) {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &.is-loading {
+    color: transparent !important;
+    cursor: wait;
+
+    &::after {
+      @include loader($white);
+      @include center(1em);
+      position: absolute;
+      border-color: transparent transparent rgb(109, 129, 144) rgb(109, 129, 144);
+    }
+  }
+
+  &.is-static {
+    background-color: $gray;
+    border-color: $border-color;
+    color: $black;
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  &.is-rounded {
+    border-radius: $radius-rounded;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
+  }
+
+  .navbar-item & {
+    margin-bottom: 0;
+  }
+
+  // Cycle through button colors
+  @each $name, $colors in $button-colors {
+    $color: nth($colors, 1);
+    $background: nth($colors, 2);
+    &.is-#{$name} {
+      color: $color;
+      background-color: $background;
+      border-color: $background;
+
+      // States
+      // &:focus, // focus is left off as it's "sticky" when clicked. If you account for this in JS, just uncomment this line.
+      &:hover {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($background, 10%);
+      }
+
+      &:active,
+      &.is-active {
+        color: $color;
+        background-color: darken($background, 20%);
+        border-color: darken($background, 20%);
+      }
+
+      &.is-disabled,
+      &[disabled],
+      fieldset[disabled] & {
+        color: $color;
+        background-color: $background;
+        border-color: transparent;
+        box-shadow: none;
+        opacity: 0.5;
+      }
+
+      &.is-loading {
+        &::after {
+          border-color: transparent transparent $color $color !important;
+        }
+      }
+
+      svg {
+        fill: $color;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &.is-outlined {
+        background-color: transparent;
+        border-color: $background;
+        color: $background;
+
+        svg {
+          fill: $background;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+          @if $name == 'white' {
+            background-color: $background;
+            border-color: $background;
+          } @else {
+            background-color: darken($background, 10%);
+            border-color: darken($background, 10%);
+          }
+          color: $color;
+
+          svg {
+            fill: $color;
+          }
+        }
+
+        &.is-loading {
+          &::after {
+            border-color: transparent transparent $color $color !important;
+          }
+
+          &:hover,
+          &:focus {
+            &::after {
+              border-color: transparent transparent $background $background !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    &:first-child:not(:last-child) {
+      margin-left: calc(-0.5em - 1px);
+      margin-right: 0.25em;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 0.25em;
+      margin-right: calc(0.5em - 1px);
+    }
+
+    &:first-child:last-child {
+      margin-left: calc(0.5em - 1px);
+      margin-right: calc(0.5em - 1px);
+    }
+  }
+
+  .icon,
+  .icon > img {
+    height: 1.5em !important;
+    width: 1.5em !important;
+  }
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .button {
+    margin-bottom: 0.5rem;
+
+    &:not(:last-child):not(.is-fullwidth) {
+      @include ltr-property('margin', 0.5rem);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: -0.5rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &.is-centered {
+    justify-content: center;
+
+    .button:not(.is-fullwidth) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &.is-left {
+    justify-content: flex-start;
+
+    .button:not(.is-fullwidth) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &.is-right {
+    justify-content: flex-end;
+
+    .button:not(.is-fullwidth) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Specify for Adobe Illustrator",
+  "short_name": "Specify",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#003049",
+  "background_color": "#003049",
+  "display": "standalone"
+}

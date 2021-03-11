@@ -1,0 +1,240 @@
+code,
+kbd,
+.line-number {
+  font-family: $family-monospace;
+}
+
+code {
+  color: lighten($black, 20%);
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  font-size: 0.85em;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  .prism__token {
+    &.prism__deleted {
+      color: #ec5975;
+    }
+
+    &.prism__inserted {
+      color: $primary;
+    }
+  }
+}
+
+pre,
+pre[class*='language-'] {
+  line-height: 1.4;
+  padding: 1.75rem 1.5rem 3rem;
+  margin: 0.85rem 0;
+  background-color: $black;
+  border-radius: $radius-large;
+  overflow: auto;
+  transition: background-color 0.2s ease-in-out;
+
+  @media (max-width: ($mobile-narrow - 1px)) {
+    border-radius: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 1.75rem 1.5rem;
+  }
+
+  code {
+    color: #fff;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+li > .nuxt-content-highlight {
+  @media (max-width: ($mobile-narrow - 1px)) {
+    margin-left: -3.5rem;
+  }
+}
+
+.nuxt-content-highlight {
+  position: relative; // for CodeCopyButton
+
+  @media (max-width: ($mobile-narrow - 1px)) {
+    margin: 0.85rem -1.5rem;
+  }
+
+  > .filename {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 1;
+    color: $border-color;
+    font-family: $code-font;
+    font-size: 0.75rem;
+
+    @media (min-width: $tablet) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+div[class*='language-'] {
+  position: relative;
+  background-color: $black;
+  border-radius: $radius-large;
+
+  .highlight-lines {
+    user-select: none;
+    padding-top: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.4;
+
+    .highlighted {
+      background-color: rgba(darken($black, 65%), 75%);
+    }
+  }
+
+  pre,
+  pre[class*='language-'] {
+    background: transparent;
+    position: relative; // Disable to allow .code-copy to be positioned correctly
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 3;
+    top: 0.8em;
+    right: 3em;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+  }
+
+  .code-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 0.2;
+    z-index: 4;
+
+    > span {
+      color: #fff;
+      background: rgba(darken($black, 25%), 0.9);
+      padding: 0.75rem 0.5rem;
+      border-radius: $radius;
+      top: 3em !important;
+      right: 0.5em !important;
+    }
+  }
+
+  &:not(.line-numbers-mode) {
+    .line-numbers-wrapper {
+      display: none;
+    }
+  }
+
+  &.line-numbers-mode {
+    .highlight-lines .highlighted {
+      position: relative;
+
+      &:before {
+        content: ' ';
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 3rem;
+        height: 100%;
+        background-color: rgba(darken($black, 65%), 75%);
+      }
+    }
+  }
+
+  pre {
+    padding-left: (3rem + 1) rem;
+    vertical-align: middle;
+
+    .line-numbers-wrapper {
+      position: absolute;
+      top: 0;
+      width: 3rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.3);
+      padding: 1.75rem 0;
+      line-height: 1.4;
+
+      br {
+        user-select: none;
+      }
+
+      .line-number {
+        position: relative;
+        z-index: 4;
+        user-select: none;
+        font-size: 0.85em;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: 100%;
+      border-radius: $radius-large 0 0 $radius-large;
+      border-right: 1px solid rgba(0, 0, 0, 66%);
+      background-color: $black;
+    }
+  }
+}
+
+@each $lang in $code-lang {
+  div#{'[class~="language-' + lang + '"]'} {
+    &:before {
+      content: '' + lang;
+    }
+  }
+}
+
+div[class~='language-javascript']:before {
+  content: 'js';
+}
+
+div[class~='language-typescript']:before {
+  content: 'ts';
+}
+
+div[class~='language-markup']:before {
+  content: 'html';
+}
+
+div[class~='language-markdown']:before {
+  content: 'md';
+}
+
+div[class~='language-json']:before {
+  content: 'json';
+}
+
+div[class~='language-ruby']:before {
+  content: 'rb';
+}
+
+div[class~='language-python']:before {
+  content: 'py';
+}
+
+div[class~='language-bash']:before {
+  content: 'sh';
+}
+
+div[class~='language-php']:before {
+  content: 'php';
+}
