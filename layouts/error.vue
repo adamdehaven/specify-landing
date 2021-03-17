@@ -36,7 +36,7 @@
                     <a v-if="canGoBack" @click.prevent="$router.back()" class="button is-black is-outlined" href="#"
                       >Go Back</a
                     >
-                    <RouterLink to="/" :exact="true" class="button is-black">Take Me Home</RouterLink>
+                    <NuxtLink to="/" :exact="true" class="button is-black">Take Me Home</NuxtLink>
                   </div>
                 </div>
               </div>
