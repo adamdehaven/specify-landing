@@ -23,7 +23,7 @@
         <div class="is-col has-text-right-tablet">
           <a
             class="button is-large is-blue mb-1 specify-install-cta"
-            href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+            href="https://exchange.adobe.com/creativecloud.details.106345.html"
             rel="noopener"
             target="_blank"
           >
@@ -32,9 +32,9 @@
             </span>
             <span>Install Specify</span>
           </a>
-          <!-- <p class="has-text-gray is-marginless">
+          <p class="has-text-gray is-marginless">
             <small>Only $11.99/year</small>
-          </p> -->
+          </p>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
               <div class="buttons is-centered">
                 <a href="#features" class="button is-black is-large">View Features</a>
                 <a
-                  href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+                  href="https://exchange.adobe.com/creativecloud.details.106345.html"
                   class="button is-blue is-large specify-install-cta"
                   rel="noopener"
                   target="_blank"
@@ -171,7 +171,7 @@
             <div class="is-col">
               <p class="is-callout-text">
                 <a
-                  href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+                  href="https://exchange.adobe.com/creativecloud.details.106345.html"
                   class="specify-install-cta"
                   target="_blank"
                   rel="noopener"
@@ -186,7 +186,7 @@
               <p>
                 Simply
                 <a
-                  href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+                  href="https://exchange.adobe.com/creativecloud.details.106345.html"
                   class="specify-install-cta"
                   target="_blank"
                   rel="noopener"

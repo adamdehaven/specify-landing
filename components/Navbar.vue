@@ -20,7 +20,7 @@
         <div class="navbar-item is-hidden-tablet is-hidden-tablet-wide is-hidden-desktop ml-auto">
           <a
             class="button is-blue is-rounded specify-install-cta"
-            href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+            href="https://exchange.adobe.com/creativecloud.details.106345.html"
             target="_blank"
             rel="noopener"
           >
@@ -55,7 +55,7 @@
             <a
               class="button is-blue is-rounded specify-install-cta"
               :class="{ 'is-large': !!isTransparent && !mobileMenuIsActive }"
-              href="https://exchange.adobe.com/creativecloud.details.104123.specify.html"
+              href="https://exchange.adobe.com/creativecloud.details.106345.html"
               rel="noopener"
               target="_blank"
             >
