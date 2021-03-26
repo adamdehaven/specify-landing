@@ -1,17 +1,18 @@
 [
   {
+    "slug": "4.0.1",
+    "date": "2021-03-26",
+    "details": ["Fixing extension panel icons."]
+  },
+  {
     "slug": "4.0.0",
     "date": "2021-03-19",
-    "details": [
-      "Releasing as Adobe Exchange compatible extension."
-    ]
+    "details": ["Releasing as Adobe Exchange compatible extension."]
   },
   {
     "slug": "3.2.2",
     "date": "2021-03-03",
-    "details": [
-      "Updating artwork files and external URLs."
-    ]
+    "details": ["Updating artwork files and external URLs."]
   },
   {
     "slug": "3.2.0",
@@ -30,16 +31,12 @@
   {
     "slug": "3.0.3",
     "date": "2020-12-10",
-    "details": [
-      "Properly convert stroke width, gap, and head and tail units."
-    ]
+    "details": ["Properly convert stroke width, gap, and head and tail units."]
   },
   {
     "slug": "3.0.2",
     "date": "2020-10-30",
-    "details": [
-      "Code formatting - no script/extension changes."
-    ]
+    "details": ["Code formatting - no script/extension changes."]
   },
   {
     "slug": "3.0.1",
@@ -51,24 +48,17 @@
   {
     "slug": "3.0.0",
     "date": "2020-10-26",
-    "details": [
-      "Update for CEP 10"
-    ]
+    "details": ["Update for CEP 10"]
   },
   {
     "slug": "2.0.4",
     "date": "2020-06-23",
-    "details": [
-      "Adjusting default stroke width to 1 unit (instead of 0.5).",
-      "Updated internal build process."
-    ]
+    "details": ["Adjusting default stroke width to 1 unit (instead of 0.5).", "Updated internal build process."]
   },
   {
     "slug": "2.0.3",
     "date": "2020-06-19",
-    "details": [
-      "Minor patch, simply adjusts the default stroke width to 1 unit (instead of 0.5)."
-    ]
+    "details": ["Minor patch, simply adjusts the default stroke width to 1 unit (instead of 0.5)."]
   },
   {
     "slug": "2.0.2",
@@ -139,8 +129,6 @@
   {
     "slug": "1.0.0",
     "date": "2016-05-10",
-    "details": [
-      "Initial release."
-    ]
+    "details": ["Initial release."]
   }
 ]
