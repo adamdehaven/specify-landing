@@ -1,5 +1,11 @@
 # specify-landing
 
+[Specify for Adobe Illustrator](https://specify.dehaven.org)
+
+## Netlify Build Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a09e5a43-a37f-4d2e-8251-0f814cd02e06/deploy-status)](https://app.netlify.com/sites/specify/deploys)
+
 ## Build Setup
 
 ```bash
