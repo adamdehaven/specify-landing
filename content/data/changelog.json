@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.1.1",
+    "date": "2021-06-02",
+    "details": ["Handle if user does not have a selected font installed."]
+  },
+  {
     "slug": "4.1.0",
     "date": "2021-06-02",
     "details": ["Adding persistent font family selection for dimension label text."]
