@@ -140,6 +140,7 @@
               <li>Include units in the label</li>
               <li>Customize the unit text</li>
               <li>Decimal places in measurements</li>
+              <li>Font family</li>
               <li>Font size</li>
               <li>Label color</li>
               <li>Label gap</li>
@@ -300,6 +301,9 @@
               <p>
                 Set the desired number of decimal places to display after the decimal point in the label dimensions.
               </p>
+
+              <h4>Font Family</h4>
+              <p>Set the desired font family for the dimension label(s). Default is &quot;Tahoma&quot;.</p>
 
               <h4>Font Size</h4>
               <p>

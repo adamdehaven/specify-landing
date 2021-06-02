@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.1.0",
+    "date": "2021-06-02",
+    "details": ["Adding persistent font family selection for dimension label text."]
+  },
+  {
     "slug": "4.0.2",
     "date": "2021-03-30",
     "details": ["Fixing extension panel icons."]
