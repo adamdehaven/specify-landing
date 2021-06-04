@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.1.2",
+    "date": "2021-06-04",
+    "details": ["Handle if user does not select a compatible font."]
+  },
+  {
     "slug": "4.1.1",
     "date": "2021-06-02",
     "details": ["Handle if user does not have a selected font installed."]
