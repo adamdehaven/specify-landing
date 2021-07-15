@@ -110,6 +110,7 @@
                 sides
               </li>
               <li>Define a custom scale</li>
+              <li>Choose whether to lock the <b>SPEC</b> layer after adding the&nbsp;dimensions</li>
             </ul>
           </div>
           <div class="is-col">
