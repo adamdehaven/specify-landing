@@ -1,5 +1,13 @@
 [
   {
+    "slug": "4.2.0",
+    "date": "2021-07-15",
+    "details": [
+      "Add SPEC layer option panel, along with option to lock/not lock the SPEC layer after adding dimensions.",
+      "Resolves issue with some boolean (true/false) settings not persisting."
+    ]
+  },
+  {
     "slug": "4.1.2",
     "date": "2021-06-04",
     "details": ["Handle if user does not select a compatible font."]
