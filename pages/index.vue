@@ -273,6 +273,9 @@
                 choosing '1/4' will indicate the artwork is drawn at one-fourth scale, resulting in dimension values
                 that are 4 times their drawn dimensions.
               </p>
+              
+              <h4>SPEC Layer</h4>
+              <p>Choose whether to lock the SPEC layer after adding the dimensions.</p>
 
               <h3>Styles Panel</h3>
               <p>
