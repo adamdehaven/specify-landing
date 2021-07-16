@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.2.1",
+    "date": "2021-07-16",
+    "details": ["Detect whether settings can be reset based on new layer lock option (oops)."]
+  },
+  {
     "slug": "4.2.0",
     "date": "2021-07-15",
     "details": [
