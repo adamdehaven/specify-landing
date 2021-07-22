@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.2.2",
+    "date": "2021-07-22",
+    "details": ["Updating label text to a single space between units and measurement."]
+  },
+  {
     "slug": "4.2.1",
     "date": "2021-07-16",
     "details": ["Detect whether settings can be reset based on new layer lock option (oops)."]
