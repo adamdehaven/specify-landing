@@ -100,8 +100,9 @@
           <div class="is-col">
             <h3>Options Panel</h3>
             <p class="is-callout-text">
-              The Options Panel allows the user to select the side(s) of the object(s) to dimension, whether to
-              dimension the object itself or between objects, and the scale of the artwork.
+              The Options Panel allows the user to select the side(s) of the object(s) to dimension, to use decimals or
+              fractions for non-whole-number measurements, whether to dimension the object itself or between objects,
+              and the scale of the artwork.
             </p>
             <ul class="is-callout-text">
               <li>Choose which dimension(s) to specify</li>
@@ -141,7 +142,6 @@
             <ul class="is-callout-text">
               <li>Include units in the label</li>
               <li>Customize the unit text</li>
-              <li>Decimal places in measurements</li>
               <li>Font family</li>
               <li>Font size</li>
               <li>Label color</li>
@@ -245,8 +245,9 @@
 
               <h3>Options Panel</h3>
               <p>
-                The Options Panel allows the user to select the side(s) of the object(s) to dimension, whether to
-                dimension the object itself or between objects, and the scale of the artwork.
+                The Options Panel allows the user to select the side(s) of the object(s) to dimension, to use decimals
+                or fractions for non-whole-number measurements, whether to dimension the object itself or between
+                objects, and the scale of the artwork.
               </p>
 
               <h4>Dimensions</h4>
@@ -313,11 +314,6 @@
               <p>
                 When checked, allows the user to customize the text of the units label. For example, displaying the
                 abbreviation for feet, "ft" instead of the ruler measurement unit.
-              </p>
-
-              <h4>Decimals</h4>
-              <p>
-                Set the desired number of decimal places to display after the decimal point in the label dimensions.
               </p>
 
               <h4>Font Family</h4>
