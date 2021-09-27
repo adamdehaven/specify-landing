@@ -273,7 +273,20 @@
                 choosing '1/4' will indicate the artwork is drawn at one-fourth scale, resulting in dimension values
                 that are 4 times their drawn dimensions.
               </p>
-              
+
+              <h4>Decimals or Fractions</h4>
+              <p>You may choose to use decimals or fractions for measurements that contain non-whole-numbers.</p>
+              <p>
+                If you choose **Decimals**, you can specify how many decimal places to use for the measurement (0-5
+                decimal places). Default is `2`.
+              </p>
+              <p>
+                If you choose to use **Fractions** you can specify the maximum denominator number to use. This setting
+                will impact the rounding algorithm. Default is `64`. You may also choose whether to include a dash `-`
+                between the whole number and the fraction. With this setting enabled, the measurement `1 3/4` is
+                displayed as `1-3/4`.
+              </p>
+
               <h4>SPEC Layer</h4>
               <p>Choose whether to lock the SPEC layer after adding the dimensions.</p>
 
