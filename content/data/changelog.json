@@ -1,5 +1,13 @@
 [
   {
+    "slug": "4.3.1",
+    "date": "2021-10-04",
+    "details": [
+      "Resolves issue with Restore Defaults not checking for existence of field.",
+      "Resolves issue with Custom Units Label setting not persisting."
+    ]
+  },
+  {
     "slug": "4.3.0",
     "date": "2021-09-27",
     "details": [
