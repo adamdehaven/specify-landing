@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.3.2",
+    "date": "2021-10-12",
+    "details": ["Added instructions on how to update the extension within the extension 'Updates' tab."]
+  },
+  {
     "slug": "4.3.1",
     "date": "2021-10-04",
     "details": [

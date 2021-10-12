@@ -205,6 +205,21 @@
                 </p>
               </div>
 
+              <h4>Extension Updates</h4>
+              <p>To update to the latest version of the Specify extension:</p>
+              <ol>
+                <li>Open the Creative Cloud desktop app.</li>
+                <li>Click to activate the <code>Marketplace</code> tab.</li>
+                <li>Click <code>Manage Plugins</code> on the sidebar.</li>
+                <li>
+                  Find the Specify extension in the list of plugins. If an update is available, simply click the
+                  <code>Update</code> button and then restart Illustrator.
+                </li>
+              </ol>
+              <figure class="image">
+                <img src="~/assets/images/extension-update-panel.png" alt="Specify extension update panel" />
+              </figure>
+
               <h3>Usage</h3>
               <p>
                 To run the extension, first select one or more objects in your open Illustrator document. You must have
