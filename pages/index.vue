@@ -210,7 +210,7 @@
               <ol>
                 <li>Open the Creative Cloud desktop app.</li>
                 <li>Click to activate the <code>Marketplace</code> tab.</li>
-                <li>Click <code>Manage Plugins</code> on the sidebar.</li>
+                <li>Click <code>Plugins</code>, then <code>Manage Plugins</code> on the sidebar.</li>
                 <li>
                   Find the Specify extension in the list of plugins. If an update is available, simply click the
                   <code>Update</code> button and then restart Illustrator.
