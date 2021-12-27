@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.4.1",
+    "date": "2021-12-27",
+    "details": ["Automatically convert units when 'RulerUnits' are changed."]
+  },
+  {
     "slug": "4.4.0",
     "date": "2021-12-27",
     "details": [
