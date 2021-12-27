@@ -1,5 +1,15 @@
 [
   {
+    "slug": "4.4.0",
+    "date": "2021-12-27",
+    "details": [
+      "Convert default values to proper units based on 'RulerUnits'.",
+      "Scale denominator allows for decimal values (e.g. converting from centimeters to meters).",
+      "Custom units text should default to current ruler units if not enabled.",
+      "Add note in Styles panel for 'Unknown' ruler units."
+    ]
+  },
+  {
     "slug": "4.3.3",
     "date": "2021-10-13",
     "details": ["Modified update instructions."]
