@@ -1,7 +1,7 @@
 [
   {
     "slug": "4.4.1",
-    "date": "2021-12-27",
+    "date": "2022-01-04",
     "details": ["Automatically convert units when 'RulerUnits' are changed."]
   },
   {
