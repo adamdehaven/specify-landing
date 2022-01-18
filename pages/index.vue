@@ -26,15 +26,15 @@
                       alt="Install Specify extension for Adobe Illustrator"
                     />
                   </span>
-                  <span>Install Specify</span></a
-                >
+                  <span>Install Specify</span>
+                </a>
               </div>
             </div>
           </div>
           <div class="is-row is-centered is-vcentered">
             <div class="is-col is-full-mobile is-half-desktop">
               <figure class="image laptop-image">
-                <img src="~/assets/images/specify-example.png" alt="" />
+                <img src="~/assets/images/specify-example.png" alt />
               </figure>
             </div>
           </div>
@@ -112,7 +112,10 @@
               </li>
               <li>Define a custom scale</li>
               <li>Choose to use decimals or fractions for measurements, when applicable.</li>
-              <li>Choose whether to lock the <b>SPEC</b> layer after adding the&nbsp;dimensions</li>
+              <li>
+                Choose whether to lock the
+                <b>SPEC</b> layer after adding the&nbsp;dimensions
+              </li>
             </ul>
           </div>
           <div class="is-col">
@@ -209,8 +212,14 @@
               <p>To update to the latest version of the Specify extension:</p>
               <ol>
                 <li>Open the Creative Cloud desktop app.</li>
-                <li>Click to activate the <code>Marketplace</code> tab.</li>
-                <li>Click <code>Plugins</code>, then <code>Manage Plugins</code> on the sidebar.</li>
+                <li>
+                  Click to activate the
+                  <code>Marketplace</code> tab.
+                </li>
+                <li>
+                  Click
+                  <code>Plugins</code>, then <code>Manage Plugins</code> on the sidebar.
+                </li>
                 <li>
                   Find the Specify extension in the list of plugins. If an update is available, simply click the
                   <code>Update</code> button and then restart Illustrator.
@@ -223,8 +232,8 @@
               <h3>Usage</h3>
               <p>
                 To run the extension, first select one or more objects in your open Illustrator document. You must have
-                at least one object selected via Illustrator's Selection Tool <kbd>V</kbd> or Direct Selection Tool
-                <kbd>A</kbd>.
+                at least one object selected via Illustrator's Selection Tool
+                <kbd>V</kbd> or Direct Selection Tool <kbd>A</kbd>.
               </p>
               <p>
                 After installing the Specify extension from Adobe Exchange, simply navigate to
@@ -246,15 +255,15 @@
               <p>
                 After configuring your desired settings, make sure to select which dimension(s) to dimension, and then
                 simply click the "Specify Object(s)" button at the bottom right of the dialog. Specify will quickly
-                output all selected dimensions onto a new <b>SPEC</b> layer, and then lock the layer to prevent
-                accidental edits.
+                output all selected dimensions onto a new
+                <b>SPEC</b> layer, and then lock the layer to prevent accidental edits.
               </p>
 
               <h4>SPEC Layer</h4>
               <p>
-                You are free to unlock the <b>SPEC</b> layer and edit as needed. You may change the color of individual
-                dimension labels, adjust the placement of dimension groups, or even remove dimensions you no longer
-                need.
+                You are free to unlock the
+                <b>SPEC</b> layer and edit as needed. You may change the color of individual dimension labels, adjust
+                the placement of dimension groups, or even remove dimensions you no longer need.
               </p>
               <p>If you make a mistake, no problem! Simply select the desired objects and run the extension again.</p>
 
@@ -285,23 +294,26 @@
               </p>
               <p>
                 For example, if you are designing an engineering drawing at 1/4 scale (or 1:4), you simply choose this
-                ratio from the <b>Scale</b> dropdown menu, and then optionally enable the checkbox for Custom Units
-                Texton the Styles Panel that corresponds to the unit labels you would like to output. In this example,
-                choosing '1/4' will indicate the artwork is drawn at one-fourth scale, resulting in dimension values
-                that are 4 times their drawn dimensions.
+                ratio from the
+                <b>Scale</b> dropdown menu, and then optionally enable the checkbox for Custom Units Texton the Styles
+                Panel that corresponds to the unit labels you would like to output. In this example, choosing '1/4' will
+                indicate the artwork is drawn at one-fourth scale, resulting in dimension values that are 4 times their
+                drawn dimensions.
               </p>
 
               <h4>Decimals or Fractions</h4>
               <p>You may choose to use decimals or fractions for measurements that contain non-whole-numbers.</p>
               <p>
-                If you choose <b>Decimals</b>, you can specify how many decimal places to use for the measurement (0-5
-                decimal places). Default is 2.
+                If you choose
+                <b>Decimals</b>, you can specify how many decimal places to use for the measurement (0-5 decimal
+                places). Default is 2.
               </p>
               <p>
-                If you choose to use <b>Fractions</b> you can specify the maximum denominator number to use. This
-                setting will impact the rounding algorithm. Default is 64. You may also choose whether to include a dash
-                - between the whole number and the fraction. With this setting enabled, the measurement
-                <code>1 3/4</code> is displayed as <code>1-3/4</code>.
+                If you choose to use
+                <b>Fractions</b> you can specify the maximum denominator number to use. This setting will impact the
+                rounding algorithm. Default is 64. You may also choose whether to include a dash - between the whole
+                number and the fraction. With this setting enabled, the measurement <code>1 3/4</code> is displayed as
+                <code>1-3/4</code>.
               </p>
 
               <h4>SPEC Layer</h4>
@@ -318,7 +330,8 @@
               <p>
                 The extension automatically dimensions objects based on the Document's default units. To dimension in
                 different units (i.e. Inches, Centimeters, etc.), first, select show Rulers via `View > Rulers > Show
-                Rulers` ( <kbd>⌘Cmd</kbd> + <kbd>R</kbd> on Mac, <kbd>Ctrl</kbd> + <kbd>R</kbd> on PC ).
+                Rulers` (
+                <kbd>⌘Cmd</kbd> + <kbd>R</kbd> on Mac, <kbd>Ctrl</kbd> + <kbd>R</kbd> on PC ).
               </p>
               <p>
                 Next, right-click on the Ruler, and select your desired units. Otherwise, the extension will use the
@@ -359,7 +372,10 @@
               </p>
 
               <h3>Changelog</h3>
-              <p>View the <NuxtLink to="/changelog">changelog</NuxtLink></p>
+              <p>
+                View the
+                <NuxtLink to="/changelog">changelog</NuxtLink>
+              </p>
             </div>
           </div>
         </div>
@@ -399,14 +415,11 @@
         <div class="is-row">
           <div class="is-col has-text-white has-text-centered">
             <p class="mt-4">
-              <small
-                >Not into looking at code? No worries. <br />Reach out on Twitter&nbsp;<a
-                  href="https://twitter.com/adamdehaven"
-                  target="_blank"
-                  rel="noopener"
-                  >@adamdehaven</a
-                ></small
-              >
+              <small>
+                Not into looking at code? No worries.
+                <br />Reach out on Twitter&nbsp;
+                <a href="https://twitter.com/adamdehaven" target="_blank" rel="noopener">@adamdehaven</a>
+              </small>
             </p>
           </div>
         </div>
@@ -612,7 +625,7 @@ export default {
       }
 
       img {
-        max-width: 400px;
+        max-width: 100%;
         margin: auto;
       }
     }
