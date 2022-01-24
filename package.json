@@ -24,7 +24,7 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/adamdehaven/specify-landing#readme",
   "dependencies": {
-    "@nuxt/content": "1.14.0",
+    "@nuxt/content": "1.15.1",
     "@nuxtjs/dayjs": "^1.4.1",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.8.3",
