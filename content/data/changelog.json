@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.5.1",
+    "date": "2022-01-31",
+    "details": ["Update layout to prevent inaccessible buttons."]
+  },
+  {
     "slug": "4.5.0",
     "date": "2022-01-17",
     "details": [
