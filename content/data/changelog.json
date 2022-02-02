@@ -1,5 +1,10 @@
 [
   {
+    "slug": "4.5.2",
+    "date": "2022-02-01",
+    "details": ["Tweaked button group widths.", "Fixed extension panel icon (finally)."]
+  },
+  {
     "slug": "4.5.1",
     "date": "2022-01-31",
     "details": ["Update layout to prevent inaccessible buttons."]
