@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .is-col {
   display: block;
   flex-basis: 0;
@@ -77,12 +79,14 @@
     @include ltr-property('margin', 80%, false);
   }
   @for $i from 0 through 12 {
+    $percentage: math.div($i, 12);
+
     .is-row.is-mobile > &.is-#{$i} {
       flex: none;
-      width: percentage($i / 12);
+      width: percentage($percentage);
     }
     .is-row.is-mobile > &.is-offset-#{$i} {
-      @include ltr-property('margin', percentage($i / 12), false);
+      @include ltr-property('margin', percentage($percentage), false);
     }
   }
 
@@ -159,12 +163,14 @@
       @include ltr-property('margin', 80%, false);
     }
     @for $i from 0 through 12 {
+      $percentage: math.div($i, 12);
+
       &.is-#{$i}-mobile {
         flex: none;
-        width: percentage($i / 12);
+        width: percentage($percentage);
       }
       &.is-offset-#{$i}-mobile {
-        @include ltr-property('margin', percentage($i / 12), false);
+        @include ltr-property('margin', percentage($percentage), false);
       }
     }
   }
@@ -262,14 +268,16 @@
     }
 
     @for $i from 0 through 12 {
+      $percentage: math.div($i, 12);
+
       &.is-#{$i},
       &.is-#{$i}-tablet {
         flex: none;
-        width: percentage($i / 12);
+        width: percentage($percentage);
       }
       &.is-offset-#{$i},
       &.is-offset-#{$i}-tablet {
-        @include ltr-property('margin', percentage($i / 12), false);
+        @include ltr-property('margin', percentage($percentage), false);
       }
     }
   }
@@ -347,12 +355,14 @@
     }
 
     @for $i from 0 through 12 {
+      $percentage: math.div($i, 12);
+
       &.is-#{$i}-touch {
         flex: none;
-        width: percentage($i / 12);
+        width: percentage($percentage);
 
         &.is-offset-#{$i}-touch {
-          @include ltr-property('margin', percentage($i / 12), false);
+          @include ltr-property('margin', percentage($percentage), false);
         }
       }
     }
@@ -430,12 +440,14 @@
       @include ltr-property('margin', 80%, false);
     }
     @for $i from 0 through 12 {
+      $percentage: math.div($i, 12);
+
       &.is-#{$i}-desktop {
         flex: none;
-        width: percentage($i / 12);
+        width: percentage($percentage);
       }
       &.is-offset-#{$i}-desktop {
-        @include ltr-property('margin', percentage($i / 12), false);
+        @include ltr-property('margin', percentage($percentage), false);
       }
     }
   }
