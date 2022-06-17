@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .tile {
   align-items: stretch;
   display: block;
@@ -46,7 +48,7 @@
     @for $i from 1 through 12 {
       &.is-#{$i} {
         flex: none;
-        width: ($i / 12) * 100%;
+        width: calc(math.div($i, 12) * 100%);
       }
     }
   }
