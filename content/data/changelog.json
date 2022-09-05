@@ -1,5 +1,13 @@
 [
   {
+    "slug": "4.6.0",
+    "date": "2022-09-05",
+    "details": [
+      "Add the ability to dimension the area of each selected object.",
+      "Fixes an issue where restoring defaults did not always reset all settings."
+    ]
+  },
+  {
     "slug": "4.5.3",
     "date": "2022-02-02",
     "details": [

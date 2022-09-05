@@ -106,6 +106,7 @@
             </p>
             <ul class="is-callout-text">
               <li>Choose which dimension(s) to specify</li>
+              <li>Choose to calculate the area of each selected object</li>
               <li>
                 With multiple objects selected, choose to dimension between the two objects instead of their individual
                 sides
@@ -280,6 +281,13 @@
                 like to specify. You may choose top, right, bottom, left, or any combination of sides.
               </p>
 
+              <h4>Object Area</h4>
+              <p>
+                Calculate the area of each selected object and output into the <code>SPECS</code> layer at the center of
+                each object. If units are included in the label text, they will be prepended with <code>²</code> --
+                Example: <code>6.11 in²</code>
+              </p>
+
               <h4>Multiple Objects</h4>
               <p>
                 If exactly two objects are selected on your artboard, you will be given the option to dimension between
@@ -329,9 +337,9 @@
               <p>When checked, inserts the units in the label alongside the dimension measurement.</p>
               <p>
                 The extension automatically dimensions objects based on the Document's default units. To dimension in
-                different units (i.e. Inches, Centimeters, etc.), first, select show Rulers via `View > Rulers > Show
-                Rulers` (
-                <kbd>⌘Cmd</kbd> + <kbd>R</kbd> on Mac, <kbd>Ctrl</kbd> + <kbd>R</kbd> on PC ).
+                different units (i.e. Inches, Centimeters, etc.), first, select show Rulers via
+                <code>View > Rulers > Show Rulers</code> ( <kbd>⌘Cmd</kbd> + <kbd>R</kbd> on Mac, <kbd>Ctrl</kbd> +
+                <kbd>R</kbd> on PC ).
               </p>
               <p>
                 Next, right-click on the Ruler, and select your desired units. Otherwise, the extension will use the
