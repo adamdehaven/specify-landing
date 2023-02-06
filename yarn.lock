@@ -9341,10 +9341,10 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
-vue-inline-svg@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/vue-inline-svg/-/vue-inline-svg-2.1.0.tgz#45f20a34d458636c5caea5da28eef6cad9a87fcb"
-  integrity sha512-80u/BGtjOzXp31yFahXsfvkBrHKHEHKyrkZ42MGoAbD6jHzWpMJLijsyRj66pps7IyKxZcnYkO3ijsJhr4zXsg==
+vue-inline-svg@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vue-inline-svg/-/vue-inline-svg-2.1.2.tgz#b1c87e5794ad90493f9d7674087f448531c7e4bd"
+  integrity sha512-j9Xx+N2rmK1IfK4dw+0pAJa7x3+k3Yvjb172DtiLvN68AH1TKDbJ79Hacg8IdmPmoPm/2eB2hwr2OKLJ8GMMUw==
 
 vue-loader@^15.9.7:
   version "15.9.8"
