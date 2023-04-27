@@ -33,7 +33,7 @@
             <span>Install Specify</span>
           </a>
           <p class="has-text-gray is-marginless">
-            <small>Only $17.99/year</small>
+            <small>Only $19.99/year</small>
           </p>
         </div>
       </div>
